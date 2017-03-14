@@ -317,6 +317,20 @@
           </includes>
         </configuration>
       </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-source-plugin</artifactId>
+        <version>3.0.1</version>
+        <configuration>
+          <finalName>${project.artifactId}-${project.version}</finalName>
+          <attach>false</attach>
+        </configuration>
+        <executions>
+          <execution>
+            <phase>package</phase>
+          </execution>
+        </executions>
+      </plugin>
     </plugins>
 
     <!-- J A R  R E S O U R C E S -->
